@@ -1,0 +1,16 @@
+<div id="wrapper">
+    <h1>PPM - Project Product Management</h1>
+    
+	<a *ngIf="this.productsService.location != 'Home Page'" href="#" [routerLink]="['/home']">Home</a>
+	<span *ngIf="this.productsService.location == 'Home Page'"><em>Home</em></span>
+    <a *ngIf="this.productsService.location != 'Products List'" href="#" [routerLink]="['/products']">Product List</a>
+	<span *ngIf="this.productsService.location == 'Products List'"><em>Products List</em></span>
+    <a *ngIf="this.productsService.location != 'Create New Product'" href="#" [routerLink]="['/new']">Product Creation</a>
+	<span *ngIf="this.productsService.location == 'Create New Product'"><em>Product Creation</em></span>
+
+    <fieldset>
+        <legend>&nbsp;{{this.productsService.location}}&nbsp;</legend>
+        <router-outlet></router-outlet>
+    </fieldset>
+
+</div>

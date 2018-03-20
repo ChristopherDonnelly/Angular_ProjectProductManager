@@ -1,0 +1,12 @@
+<div id="add_new_layer">
+  <label for="title">Title:
+    <input type="text" name="title" [(ngModel)]="productsService.title" ></label>
+  <label for="price">Price:
+    <input type="number" name="price" [(ngModel)]="productsService.price" ></label>
+  <label for="image_URL">Image URL:
+    <input type="url" name="image_URL" [(ngModel)]="productsService.image_URL" ></label>
+  <button (click)="add()">Create</button>
+  <button (click)="cancel()">Cancel</button>
+  <p [ngClass]="{'red': error }">{{ title.errors }}</p>
+  <p [ngClass]="{'red': error }">{{ price.errors }}</p>
+</div>

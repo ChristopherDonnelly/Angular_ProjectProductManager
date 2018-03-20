@@ -1,0 +1,33 @@
+.red {
+    color: red;
+    margin: 10px;
+}
+
+#edit_layer {
+    width: 50%;
+    margin: 70px auto;
+    border: 1px solid black;
+    height: 280px;
+    padding: 40px;
+}
+
+input[type="text"], input[type="number"], input[type="url"] {
+    display: block;
+    margin: 10px 0px;
+    width: 70%;
+    height: 25px;
+}
+
+button {
+    width: 90px;
+    height: 35px;
+    background: linear-gradient(#d1e0f3, #445b6b, #445b6b);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button~button {
+    background: linear-gradient(#eec7c6, #455b6a, #455b6a);
+}

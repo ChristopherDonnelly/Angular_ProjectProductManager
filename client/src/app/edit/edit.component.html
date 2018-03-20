@@ -1,0 +1,12 @@
+<div id="edit_layer">
+  <label for="title">Title:
+    <input type="text" name="title" [(ngModel)]="productsService.title"></label>
+  <label for="price">Price:
+    <input type="number" name="price" [(ngModel)]="productsService.price"></label>
+  <label for="image_URL">Price:
+    <input type="url" name="image_URL" [(ngModel)]="productsService.image_URL"></label>
+  <button (click)="update(productsService.id)">Upload</button>
+  <button (click)="delete(productsService.id)">Delete</button>
+  <p [ngClass]="{'red': error }">{{ title.errors }}</p>
+  <p [ngClass]="{'red': error }">{{ price.errors }}</p>
+</div>

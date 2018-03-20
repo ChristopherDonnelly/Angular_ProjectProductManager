@@ -1,0 +1,38 @@
+#table_layer {
+    width: 100%;
+    overflow-y: auto;
+    height: 490px;
+}
+
+.product_card {
+    display: inline-block;
+    vertical-align: top;
+    width: 27%;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.product_card img {
+    width: 165px;
+    height: 115px;
+}
+.product_card p {
+    margin: 10px;
+}
+
+button {
+    width: 90px;
+    height: 35px;
+    background: linear-gradient(#d1e0f3, #445b6b, #445b6b);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button~button {
+    background: linear-gradient(#eec7c6, #455b6a, #455b6a);
+}

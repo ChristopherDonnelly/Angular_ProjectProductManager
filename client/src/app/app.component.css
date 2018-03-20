@@ -1,0 +1,39 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    margin: 30px auto;
+    text-align: center;
+    width: 970px;
+}
+
+#wrapper h1 {
+    margin: 40px;
+}
+
+#wrapper a {
+    padding: 0px 20px;
+}
+
+#wrapper span {
+    padding: 0px 23px;
+}
+
+fieldset {
+    position: relative;
+    text-align: left;
+    margin: 40px;
+    padding: 10px 30px;
+    height: 550px;
+    border-radius: 50px;
+    border: 2px groove black;
+}
+
+legend {
+    font-size: 2em;
+    margin-left: 35px;
+}

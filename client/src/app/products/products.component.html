@@ -1,0 +1,13 @@
+<div id="table_layer">
+  
+      <div class="product_card" *ngFor="let product of productsService.all">
+        <img src="{{product.image_URL}}" alt="Product Image">
+        <p>{{product.title}}</p>
+        <p>${{product.price}}</p>
+        <div class="actions">
+          <button (click)="edit(product._id)">Edit</button>
+          <button (click)="delete(product._id)">Delete</button>
+        </div>
+      </div>
+   
+</div>
